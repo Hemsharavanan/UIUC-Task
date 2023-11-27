@@ -23,9 +23,108 @@ This application is designed to:
 ## Dual Output Formats
 
 - This JavaScript application reads training completion records from `trainings.txt` and provides output in two formats: Array of Objects and Object with Key-Value Pairs.
+
 - When the appArray.js is executed, the output will be created as `Array of Objects`. Below is the sample output when appArray.js(this is just a sample fromat, to view enitre output run the appArray.js file)
 
+Sample output of `countOfPeopleCompletedTrainings.json`
+
+```json
+[
+  {
+    "training": "Electrical Safety for Labs",
+    "count": 118
+  },
+  {
+    "training": "Safe Handling of Human Cell Lines/Materials in a Research Laboratory",
+    "count": 99
+  }
+]
+```
+
+Sample output of `peopleCompletedTrainingsGivenYear`
+
+```json
+[
+  {
+    "training": "Electrical Safety for Labs",
+    "fiscalYear": 2024,
+    "people": ["Allie Barnes", "Brogan Stein", "Lexie Ho"]
+  },
+  {
+    "training": "X-Ray Safety",
+    "fiscalYear": 2024,
+    "people": ["Asia Duke", "Anabelle Braun", "Cloe Williamson"]
+  }
+]
+```
+
+Sample output of `peopleCompletedExpiredTrainings.json`
+
+````json
+[
+  {
+    "name": "Lexie Mckinney",
+    "expiredTrainings": [
+      {
+        "training": "IRB Quiz",
+        "status": "Expired"
+      }
+    ]
+  },
+  {
+    "name": "Gretchen Boyer",
+    "expiredTrainings": [
+      {
+        "training": "Safe Handling of Human Cell Lines/Materials in a Research Laboratory",
+        "status": "Expired"
+      }
+    ]
+  }
+]
+```
+
 - When the appObject.js is executed, the output will be created as `Object with Key-Value Pairs`. Below is the sample output when appObject.js(this is just a sample fromat, to view enitre output run the appArray.js file)
+
+Sample output of `countOfPeopleCompletedTrainings.json`
+```json
+{
+  "Electrical Safety for Labs": 118,
+  "Safe Handling of Human Cell Lines/Materials in a Research Laboratory": 99,
+  "Awareness Training for the Transport of Hazardous Material": 110,
+  "X-Ray Safety": 118,
+  "Radiation Safety Annual Refresher": 121,
+  "Using Hazardous Chemicals in an Animal Care Facility": 115,
+  "Chemical Waste Requirements": 111,
+}
+````
+
+Sample output of `peopleCompletedTrainingsGivenYear`
+
+```json
+{
+  "Electrical Safety for Labs": ["Allie Barnes", "Brogan Stein", "Lexie Ho"],
+  "X-Ray Safety": ["Asia Duke", "Anabelle Braun", "Cloe Williamson"]
+}
+```
+
+Sample output of `peopleCompletedExpiredTrainings.json`
+
+```json
+{
+  "Lexie Mckinney": [
+    {
+      "trainingName": "IRB Quiz",
+      "status": "Expired"
+    }
+  ],
+  "Gretchen Boyer": [
+    {
+      "trainingName": "Safe Handling of Human Cell Lines/Materials in a Research Laboratory",
+      "status": "Expired"
+    }
+  ]
+}
+```
 
 Two files, `appArray.js` and `appObject.js`, generate the same output in different formats:
 
