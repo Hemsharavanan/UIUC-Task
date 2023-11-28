@@ -5,7 +5,6 @@ This application reads data from a file containing training completion records, 
 ## Table of Contents
 
 - [Overview](#overview)
-- [Requirements](#requirements)
 - [Dual Output Formats](#dual-output-formats)
 - [Requirements](#requirements)
 - [Installation](#installation)
@@ -83,9 +82,9 @@ Sample output of `peopleCompletedExpiredTrainings.json` from `appArray.js`
 ]
 ```
 
-- When the appObject.js is executed, the output will be created as `Object with Key-Value Pairs`. Below is the sample output when appObject.js(this is just a sample fromat, to view enitre output run the appArray.js file).
+- When the `appObject.js` is executed, the output will be created as `Object with Key-Value Pairs`. Below is the sample output when `appObject.js`(this is just a sample fromat, to view enitre output run the appArray.js file).
 
-Sample output of `countOfPeopleCompletedTrainings.json` from `objectArray.js`
+Sample output of `countOfPeopleCompletedTrainings.json` from `appObject.js`
 
 ```json
 {
@@ -99,7 +98,7 @@ Sample output of `countOfPeopleCompletedTrainings.json` from `objectArray.js`
 }
 ```
 
-Sample output of `peopleCompletedTrainingsGivenYear` from `objectArray.js`
+Sample output of `peopleCompletedTrainingsGivenYear` from `appObject.js`
 
 ```json
 {
@@ -108,7 +107,7 @@ Sample output of `peopleCompletedTrainingsGivenYear` from `objectArray.js`
 }
 ```
 
-Sample output of `peopleCompletedExpiredTrainings.json` from `objectArray.js`
+Sample output of `peopleCompletedExpiredTrainings.json` from `appObject.js`
 
 ```json
 {
