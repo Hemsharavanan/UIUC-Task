@@ -28,7 +28,7 @@ This application is designed to:
 
 Sample output of `countOfPeopleCompletedTrainings.json` from `appArray.js`
 
-````json
+```json
 [
   {
     "training": "Electrical Safety for Labs",
@@ -39,7 +39,7 @@ Sample output of `countOfPeopleCompletedTrainings.json` from `appArray.js`
     "count": 99
   }
 ]
-
+```
 
 Sample output of `peopleCompletedTrainingsGivenYear` from `appArray.js`
 
@@ -56,7 +56,7 @@ Sample output of `peopleCompletedTrainingsGivenYear` from `appArray.js`
     "people": ["Asia Duke", "Anabelle Braun", "Cloe Williamson"]
   }
 ]
-````
+```
 
 Sample output of `peopleCompletedExpiredTrainings.json` from `appArray.js`
 
