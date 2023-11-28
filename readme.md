@@ -24,11 +24,11 @@ This application is designed to:
 
 - This JavaScript application reads training completion records from `trainings.txt` and provides output in two formats: Array of Objects and Object with Key-Value Pairs.
 
-- When the appArray.js is executed, the output will be created as `Array of Objects`. Below is the sample output when appArray.js(this is just a sample fromat, to view enitre output run the appArray.js file)
+- When the `appArray.js` is executed, the output will be created as `Array of Objects`. Below is the sample output when `appArray.js` (this is just a sample fromat, to view enitre output run the appArray.js file)
 
-Sample output of `countOfPeopleCompletedTrainings.json`
+Sample output of `countOfPeopleCompletedTrainings.json` from `appArray.js`
 
-```json
+````json
 [
   {
     "training": "Electrical Safety for Labs",
@@ -39,9 +39,9 @@ Sample output of `countOfPeopleCompletedTrainings.json`
     "count": 99
   }
 ]
-```
 
-Sample output of `peopleCompletedTrainingsGivenYear`
+
+Sample output of `peopleCompletedTrainingsGivenYear` from `appArray.js`
 
 ```json
 [
@@ -56,11 +56,11 @@ Sample output of `peopleCompletedTrainingsGivenYear`
     "people": ["Asia Duke", "Anabelle Braun", "Cloe Williamson"]
   }
 ]
-```
+````
 
-Sample output of `peopleCompletedExpiredTrainings.json`
+Sample output of `peopleCompletedExpiredTrainings.json` from `appArray.js`
 
-````json
+```json
 [
   {
     "name": "Lexie Mckinney",
@@ -83,9 +83,10 @@ Sample output of `peopleCompletedExpiredTrainings.json`
 ]
 ```
 
-- When the appObject.js is executed, the output will be created as `Object with Key-Value Pairs`. Below is the sample output when appObject.js(this is just a sample fromat, to view enitre output run the appArray.js file)
+- When the appObject.js is executed, the output will be created as `Object with Key-Value Pairs`. Below is the sample output when appObject.js(this is just a sample fromat, to view enitre output run the appArray.js file).
 
-Sample output of `countOfPeopleCompletedTrainings.json`
+Sample output of `countOfPeopleCompletedTrainings.json` from `objectArray.js`
+
 ```json
 {
   "Electrical Safety for Labs": 118,
@@ -94,11 +95,11 @@ Sample output of `countOfPeopleCompletedTrainings.json`
   "X-Ray Safety": 118,
   "Radiation Safety Annual Refresher": 121,
   "Using Hazardous Chemicals in an Animal Care Facility": 115,
-  "Chemical Waste Requirements": 111,
+  "Chemical Waste Requirements": 111
 }
-````
+```
 
-Sample output of `peopleCompletedTrainingsGivenYear`
+Sample output of `peopleCompletedTrainingsGivenYear` from `objectArray.js`
 
 ```json
 {
@@ -107,7 +108,7 @@ Sample output of `peopleCompletedTrainingsGivenYear`
 }
 ```
 
-Sample output of `peopleCompletedExpiredTrainings.json`
+Sample output of `peopleCompletedExpiredTrainings.json` from `objectArray.js`
 
 ```json
 {
